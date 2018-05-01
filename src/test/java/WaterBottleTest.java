@@ -11,6 +11,10 @@ public class WaterBottleTest {
         testWaterBottle = new WaterBottle(100);
     }
     @Test
+    public void hasVolumeStartAt100(){
+        assertEquals(100, testWaterBottle.getVolume());
+    }
+    @Test
     public void canDrink() {
         testWaterBottle.drink();
         assertEquals(90 ,testWaterBottle.getVolume());
